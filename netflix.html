@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix-like Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">YourLogo</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#tvShows">TV Shows</a></li>
+                <li><a href="#latest">Latest</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured">
+            <h2>Featured Content</h2>
+            <div class="featured-content">
+                <div class="item">
+                    <img src="featured_movie.jpg" alt="Featured Movie">
+                    <h3>Featured Movie Title</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Browse by Category</h2>
+            <div class="category">
+                <h3>Movies</h3>
+                <div class="movie-thumbnails">
+                    <div class="movie-thumbnail">
+                        <img src="movie1.jpg" alt="Movie 1">
+                        <p>Movie 1 Title</p>
+                    </div>
+                    <div class="movie-thumbnail">
+                        <img src="movie2.jpg" alt="Movie 2">
+                        <p>Movie 2 Title</p>
+                    </div>
+                    <!-- Add more movie thumbnails -->
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>TV Shows</h3>
+                <div class="tv-show-thumbnails">
+                    <div class="tv-show-thumbnail">
+                        <img src="tv_show1.jpg" alt="TV Show 1">
+                        <p>TV Show 1 Title</p>
+                    </div>
+                    <div class="tv-show-thumbnail">
+                        <img src="tv_show2.jpg" alt="TV Show 2">
+                        <p>TV Show 2 Title</p>
+                    </div>
+                    <!-- Add more TV show thumbnails -->
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.featured {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 30%;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.category h3 {
+    margin-bottom: 10px;
+}
+
+.movie-thumbnails,
+.tv-show-thumbnails {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.movie-thumbnail,
+.tv-show-thumbnail {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.movie-thumbnail img,
+.tv-show-thumbnail img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Define more styles as needed */
